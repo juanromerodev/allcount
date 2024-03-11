@@ -61,13 +61,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="" />
+        android:text="Gloria Leche Reconstituida Enriquecida 400g 2unid" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Codigo" />
+        android:text="Codigo EAN" />
 
     <EditText
         android:id="@+id/txtPrecio"
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="" />
+        android:text="7751271032773" />
 
     <TextView
         android:id="@+id/textView3"
@@ -131,7 +131,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        android:text="" />
+        android:text="15/10/2023" />
 
         <Button
             android:id="@+id/btnConfirmar"
