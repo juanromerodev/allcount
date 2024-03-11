@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Bienvenida">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/basic_blue">
+
+        <Button
+            android:id="@+id/btnShowMenu"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@mipmap/ic_salida_foreground"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="NOMBRE EMPLEADO APELLIDO EMPLEADO"
+            android:background="@color/basic_blue"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:contentDescription="@string/logo"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_nuevo_registro_foreground" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="44px"
+        android:textAlignment="center"
+        android:text="Tienes un nuevo registro para realizar conteo" />
+
+    <Button
+        android:id="@+id/btnIniciarRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/basic_blue"
+        android:layout_margin="10dp"
+        android:text="VAMOS!" />
+
+    <Button
+        android:id="@+id/btnListas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/basic_blue"
+        android:layout_margin="10dp"
+        android:text="LISTADO DE PENDIENTES" />
+
+    <Button
+        android:id="@+id/btnReportarMerma"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REPORTAR MERMA" />
+
+</LinearLayout>

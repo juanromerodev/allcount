@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaTareas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/basic_blue">
+
+        <Button
+            android:id="@+id/btnShowMenu"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@mipmap/ic_salida_foreground"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="NOMBRE EMPLEADO APELLIDO EMPLEADO"
+            android:background="@color/basic_blue"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gd_list_tarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
+</LinearLayout>
